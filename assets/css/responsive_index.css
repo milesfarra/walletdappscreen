@@ -1,0 +1,605 @@
+@media only screen and (max-width: 850px) {
+  /* mainpage styles */
+  .hero-wrapper {
+    border: 1px solid #ccc;
+    position: relative;
+    background: url("../images/bitcoin-bg.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 470px;
+  }
+
+  .hero-wrapper .hero-section {
+    position: relative;
+    z-index: 1;
+    padding: 30px;
+    height: inherit;
+  }
+
+  .hero-section .hero-content {
+    max-width: 600px;
+  }
+
+  .hero-section .hero-content .hero-text {
+    font-size: 40px;
+  }
+
+  .hero-content .hero-button .btn {
+    padding: 9px 35px;
+    font-size: 16px;
+  }
+
+  .connect-header-wrapper .connect-header {
+    max-width: 720px;
+  }
+
+  .connect-header .header-1 {
+    font-size: 30px;
+  }
+
+  .connect-header .header-2 {
+    font-size: 24px;
+  }
+
+  .connect-header .header-p {
+    font-size: 15px;
+  }
+
+  .connect-buttons {
+    margin-top: 35px;
+  }
+
+  .connect-buttons .connect-buttons-wrapper .col-lg-3 {
+    display: flex;
+    padding: 12px 15px;
+  }
+
+  .connect-buttons .connect-buttons-wrapper .btn {
+    font-size: 14px;
+    padding: 9px 30px;
+  }
+
+  .connect-buttons .connect-buttons-wrapper .btn .fa-solid {
+    font-size: 16px;
+    margin: auto 0;
+    padding-right: 8px;
+  }
+
+  .connect-dapp-wrapper {
+    margin-top: 30px;
+  }
+
+  .connect-dapp-rows {
+    max-width: 850px;
+  }
+
+  .connect-dapp-rows .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .connect-dapp-rows .col-lg-4 {
+    display: flex;
+    padding: 10px 15px;
+  }
+
+  .connect-dapp-rows .dapp-box {
+    padding: 30px 20px;
+  }
+
+  .connect-dapp-rows .dapp-box .box-img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .connect-dapp-rows .dapp-box .box-body {
+    margin-top: 15px;
+  }
+
+  .connect-dapp-rows .dapp-box .box-body .p-b {
+    font-size: 18px;
+  }
+
+  .connect-dapp-rows .dapp-box .box-body .btn {
+    font-size: 15px;
+    padding: 8px 30px;
+  }
+
+  /* contact styles */
+  .contact-container {
+    margin-top: 80px;
+    padding: 60px 40px 30px;
+  }
+
+  .contact-box .c-header {
+    font-size: 17px;
+  }
+
+  .contact-box .form-group {
+    margin: 25px 0;
+  }
+
+  .contact-box .form-group .form-control {
+    border-radius: 3px;
+    font-size: 13px;
+  }
+
+  .contact-box .form-group .btn {
+    font-size: 13px;
+    padding: 9px 25px;
+  }
+
+  .footer-box {
+    height: 280px;
+  }
+
+  .footer-section {
+    padding: 25px;
+  }
+
+  .footer-section .footer-p {
+    font-size: 30px;
+  }
+
+  .wallet-banner .banner-img img {
+    width: 100px;
+  }
+
+  .wallet-banner .banner-header {
+    font-size: 27px;
+  }
+
+  .wallet-banner .banner-text {
+    font-size: 18px;
+  }
+
+  /* wallet images styles */
+  .div-wallet-images {
+    margin-top: 10px;
+  }
+
+  .div-wallet-images .col-lg-3 {
+    display: flex;
+    padding: 20px 8px 25px;
+  }
+
+  .div-wallet-images .wallet-box .img-box img {
+    width: 130px;
+    border-radius: 65px;
+  }
+
+  .div-wallet-images .wallet-box .wallet-name {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  /* Modal Content/Box */
+  .modal-window-content {
+    margin: auto;
+    padding: 0px 0px;
+    border-radius: 10px;
+    color: #222;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* mainpage styles */
+  .hero-wrapper {
+    border: 1px solid #ccc;
+    position: relative;
+    background: url("../images/bitcoin-bg.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 420px;
+  }
+
+  .hero-wrapper .hero-section {
+    position: relative;
+    z-index: 1;
+    padding: 30px;
+    height: inherit;
+  }
+
+  .hero-section .hero-content {
+    max-width: 600px;
+  }
+
+  .hero-section .hero-content .hero-text {
+    font-size: 32px;
+  }
+
+  .hero-content .hero-button .btn {
+    padding: 9px 35px;
+    font-size: 15px;
+  }
+
+  .connect-header-wrapper .connect-header {
+    max-width: 700px;
+  }
+
+  .connect-header .header-1 {
+    font-size: 28px;
+  }
+
+  .connect-header .header-2 {
+    font-size: 23px;
+  }
+
+  .connect-header .header-p {
+    font-size: 15px;
+  }
+
+  .connect-buttons {
+    margin-top: 35px;
+  }
+
+  .connect-buttons .connect-buttons-wrapper .col-lg-3 {
+    display: flex;
+    padding: 12px;
+  }
+
+  .connect-buttons .connect-buttons-wrapper .btn {
+    font-size: 14px;
+    padding: 9px 30px;
+  }
+
+  .connect-buttons .connect-buttons-wrapper .btn .fa-solid {
+    font-size: 15px;
+    margin: auto 0;
+    padding-right: 8px;
+  }
+
+  .connect-dapp-wrapper {
+    margin-top: 30px;
+  }
+
+  .connect-dapp-rows .col-lg-4 {
+    display: flex;
+    padding: 10px 12px;
+  }
+
+  .connect-dapp-rows .dapp-box {
+    padding: 30px 20px;
+  }
+
+  .connect-dapp-rows .dapp-box .box-img {
+    height: 75px;
+    width: 75px;
+  }
+
+  .connect-dapp-rows .dapp-box .box-body {
+    margin-top: 15px;
+  }
+
+  .connect-dapp-rows .dapp-box .box-body .p-b {
+    font-size: 17px;
+  }
+
+  .connect-dapp-rows .dapp-box .box-body .btn {
+    font-size: 14px;
+    padding: 8px 30px;
+  }
+
+  /* contact styles */
+  .contact-container {
+    margin-top: 80px;
+    padding: 60px 10px 30px;
+  }
+
+  .contact-box .c-header {
+    font-size: 16px;
+  }
+
+  .contact-box .form-group {
+    margin: 25px 0;
+  }
+
+  .contact-box .form-group .form-control {
+    border-radius: 3px;
+    font-size: 13px;
+  }
+
+  .contact-box .form-group .btn {
+    font-size: 13px;
+    padding: 9px 25px;
+  }
+
+  .footer-box {
+    height: 260px;
+  }
+
+  .footer-section {
+    padding: 25px;
+  }
+
+  .footer-section .footer-p {
+    font-size: 27px;
+  }
+
+  .wallet-banner .banner-img img {
+    width: 95px;
+  }
+
+  .wallet-banner .banner-header {
+    font-size: 25px;
+  }
+
+  .wallet-banner .banner-text {
+    font-size: 17px;
+  }
+
+  /* wallet images styles */
+  .div-wallet-images {
+    margin-top: 10px;
+  }
+
+  .div-wallet-images .col-lg-3 {
+    display: flex;
+    padding: 20px 8px 25px;
+  }
+
+  .div-wallet-images .wallet-box .img-box img {
+    width: 110px;
+    border-radius: 55px;
+  }
+
+  .div-wallet-images .wallet-box .wallet-name {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  /* Modal Content/Box */
+  .modal-window-content {
+    margin: auto;
+    padding: 0px 0px;
+    border-radius: 10px;
+    color: #222;
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  /* Modal Content/Box */
+  .modal-window-content {
+    margin: auto;
+    padding: 0px 0px;
+    border-radius: 10px;
+    color: #222;
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 546px) {
+  /* mainpage styles */
+  .hero-wrapper {
+    border: 1px solid #ccc;
+    position: relative;
+    background: url("../images/bitcoin-bg.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 380px;
+  }
+
+  .hero-wrapper .hero-section {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    height: inherit;
+  }
+
+  .hero-section .hero-content .hero-text {
+    font-size: 27px;
+  }
+
+  .hero-content .hero-button .btn {
+    padding: 8px 32px;
+    font-size: 14px;
+  }
+
+  .connect-header .header-1 {
+    font-size: 25px;
+  }
+
+  .connect-header .header-2 {
+    font-size: 21px;
+  }
+
+  .connect-header .header-p {
+    font-size: 14px;
+  }
+
+  .connect-buttons {
+    margin-top: 35px;
+  }
+
+  .connect-buttons .connect-buttons-wrapper .col-lg-3 {
+    display: flex;
+    padding: 12px;
+  }
+
+  .connect-buttons .connect-buttons-wrapper .btn {
+    font-size: 14px;
+    padding: 9px 20px;
+  }
+
+  .connect-buttons .connect-buttons-wrapper .btn .fa-solid {
+    font-size: 15px;
+    margin: auto 0;
+    padding-right: 8px;
+  }
+
+  .connect-dapp-wrapper {
+    margin-top: 30px;
+  }
+
+  .connect-dapp-rows .col-lg-4 {
+    display: flex;
+    padding: 10px 12px;
+  }
+
+  .connect-dapp-rows .dapp-box {
+    padding: 30px 20px;
+  }
+
+  .connect-dapp-rows .dapp-box .box-img {
+    height: 70px;
+    width: 70px;
+  }
+
+  .connect-dapp-rows .dapp-box .box-body {
+    margin-top: 15px;
+  }
+
+  .connect-dapp-rows .dapp-box .box-body .p-b {
+    font-size: 16px;
+  }
+
+  .connect-dapp-rows .dapp-box .box-body .btn {
+    font-size: 14px;
+    padding: 8px 30px;
+  }
+
+  /* contact styles */
+  .contact-container {
+    margin-top: 80px;
+    padding: 60px 10px 30px;
+  }
+
+  .contact-box .c-header {
+    font-size: 14px;
+  }
+
+  .contact-box .form-group {
+    margin: 25px 0;
+  }
+
+  .contact-box .form-group .form-control {
+    border-radius: 3px;
+    font-size: 12px;
+  }
+
+  .contact-box .form-group .btn {
+    font-size: 12px;
+    padding: 9px 25px;
+  }
+
+  .footer-box {
+    height: 260px;
+  }
+
+  .footer-section {
+    padding: 25px;
+  }
+
+  .footer-section .footer-p {
+    font-size: 21px;
+  }
+
+  .wallet-banner .banner-img img {
+    width: 85px;
+  }
+
+  .wallet-banner .banner-header {
+    font-size: 22px;
+  }
+
+  .wallet-banner .banner-text {
+    font-size: 15px;
+  }
+
+  /* wallet images styles */
+  .div-wallet-images {
+    margin-top: 10px;
+  }
+
+  .div-wallet-images .col-lg-3 {
+    display: flex;
+    padding: 20px 8px 25px;
+  }
+
+  .div-wallet-images .wallet-box .img-box img {
+    width: 90px;
+    border-radius: 45px;
+  }
+
+  .div-wallet-images .wallet-box .wallet-name {
+    font-size: 14px;
+  }
+
+  /* Modal Content/Box */
+  .modal-window-content {
+    margin: auto;
+    padding: 0px 0px;
+    border-radius: 10px;
+    color: #222;
+    width: 80%;
+  }
+
+  .initial-div .wallet-info .info-box .info-img img {
+    width: 50px;
+    border-radius: 25px;
+  }
+}
+
+@media only screen and (max-width: 486px) {
+  /* Modal Content/Box */
+  .modal-window-content {
+    margin: auto;
+    padding: 0px 0px;
+    border-radius: 10px;
+    color: #222;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 428px) {
+  /* Modal Content/Box */
+  .modal-window-content {
+    margin: auto;
+    padding: 0px 0px;
+    border-radius: 10px;
+    color: #222;
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 395px) {
+  /* mainpage styles */
+  .hero-wrapper {
+    border: 1px solid #ccc;
+    position: relative;
+    background: url("../images/bitcoin-bg.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+  }
+
+  .hero-wrapper .hero-section {
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+    height: inherit;
+  }
+
+  .hero-section .hero-content .hero-text {
+    font-size: 24px;
+  }
+
+  .wallet-banner .banner-img img {
+    width: 80px;
+  }
+
+  /* Modal Content/Box */
+  .modal-window-content {
+    margin: auto;
+    padding: 0px 0px;
+    border-radius: 10px;
+    color: #222;
+    width: 98%;
+  }
+}
